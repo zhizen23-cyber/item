@@ -1,0 +1,19 @@
+照片标注为 304 带槽销轴 M8×40，配 304 开口挡圈 GB896 M7。M 在此是商家规格写法，本体为光轴，没有螺纹。
+直径 8、头下长度 40 mm 按规格解释；长度是否含头仍需实测确认。
+挡圈是独立可编辑对象，预览沿 X 轴爆炸偏置；将其 X 设 0 可回到槽中心。
+所有尺寸单位 mm。以下参数中带 assumed 的值均为照片参考估计/占位，不可作为加工、公差或采购配合保证。
+{
+  "kind": "pin",
+  "diameter": 8,
+  "underhead_length": 40,
+  "clip_nominal": 7,
+  "head_diameter_assumed": 12,
+  "head_height_assumed": 2.5,
+  "edge_chamfer_assumed": 0.3,
+  "groove_diameter_assumed": 7,
+  "groove_width_assumed": 1.1,
+  "groove_center_from_end_assumed": 2,
+  "clip_outer_diameter_assumed": 15,
+  "clip_thickness_assumed": 1
+}
+模型为未铆接、未变形状态；未模拟敲入过盈、弹性变形及承载。改变本脚本 P 参数后可重建。原始 JPG 未改。

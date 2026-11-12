@@ -1,0 +1,19 @@
+照片标注为 304 带槽销轴 M5×25，配 304 开口挡圈 GB896 M4。M 在此是商家规格写法，本体为光轴，没有螺纹。
+直径 5、头下长度 25 mm 按规格解释；长度是否含头仍需实测确认。
+挡圈是独立可编辑对象，预览沿 X 轴爆炸偏置；将其 X 设 0 可回到槽中心。
+所有尺寸单位 mm。以下参数中带 assumed 的值均为照片参考估计/占位，不可作为加工、公差或采购配合保证。
+{
+  "kind": "pin",
+  "diameter": 5,
+  "underhead_length": 25,
+  "clip_nominal": 4,
+  "head_diameter_assumed": 8,
+  "head_height_assumed": 1.8,
+  "edge_chamfer_assumed": 0.3,
+  "groove_diameter_assumed": 4,
+  "groove_width_assumed": 0.7999999999999999,
+  "groove_center_from_end_assumed": 1.5,
+  "clip_outer_diameter_assumed": 9,
+  "clip_thickness_assumed": 0.7
+}
+模型为未铆接、未变形状态；未模拟敲入过盈、弹性变形及承载。改变本脚本 P 参数后可重建。原始 JPG 未改。

@@ -1,0 +1,13 @@
+照片包装明确标 Φ3×6，内径 2。按外径 3、头下筒长 6、内径 2 mm 建模。
+可见实物是光孔母钉，不是内螺纹螺母；孔按盲孔建模，孔底位置尚未确认。
+所有尺寸单位 mm。以下参数中带 assumed 的值均为照片参考估计/占位，不可作为加工、公差或采购配合保证。
+{
+  "kind": "female",
+  "body_diameter": 3,
+  "body_length": 6,
+  "bore_diameter": 2,
+  "head_diameter_assumed": 5.5,
+  "head_height_assumed": 0.8,
+  "bore_bottom_above_head_assumed": 0.3
+}
+模型为未铆接、未变形状态；未模拟敲入过盈、弹性变形及承载。改变本脚本 P 参数后可重建。原始 JPG 未改。
