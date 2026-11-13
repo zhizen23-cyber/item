@@ -1,0 +1,15 @@
+{
+  "name": "内六角圆柱头螺丝M3x6",
+  "nonmanifold_edges": 0,
+  "volume_mm3": 98.18560148464498,
+  "dimensions_mm": [
+    5.5,
+    5.5,
+    9.0
+  ],
+  "under_head_length_mm": 6,
+  "overall_length_mm": 9.0,
+  "vertices": 35442,
+  "reopened_verified": true,
+  "blender_version": "4.3.2"
+}
