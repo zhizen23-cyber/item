@@ -1,0 +1,41 @@
+{
+  "source_sha256": "61d6a59e635ae6107e30a73102324112bef4c7a0d192a3346ee6ddbe63c31d73",
+  "source_valid": true,
+  "source_bbox_mm": [
+    20.0,
+    16.0,
+    70.0000002
+  ],
+  "parts": [
+    {
+      "name": "STEP_Solid_1",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 3472.722947071819,
+      "bbox_mm": [
+        20.0,
+        7.0,
+        70.0
+      ]
+    },
+    {
+      "name": "STEP_Solid_2",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 5936.249750280658,
+      "bbox_mm": [
+        11.800000000000182,
+        11.600000200011714,
+        70.0000002
+      ]
+    },
+    {
+      "name": "STEP_Solid_3",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 3472.7229470718166,
+      "bbox_mm": [
+        20.0,
+        7.0,
+        70.0
+      ]
+    }
+  ]
+}
