@@ -1,0 +1,15 @@
+六角螺母M4 · 照片参考模型
+照片标签仅明确 M4，可见为六角螺母；材料、等级及标准号未确认。
+参考 DIN 934 同类产品的外形参数：对边 7 mm，厚 3.2 mm，常用粗牙 0.7 mm。
+尺寸参考来源：https://www.accu.co.uk/hexagon-nuts/268707-HPN-M4-BR
+仅借用同类尺寸，不认定用户实物就是该品牌、材料或标准品。
+内螺纹为连续右旋近似牙形。倒角、牙根、截顶和公差未实测，不是量规认证或加工模型。
+原点为下表面中心，轴向 +Z。单位mm。用于库存识别与装配布局前需核对实测尺寸，尤其螺距和厚度。
+修改 P 后用 blender -b --python build_model.py 重建，会覆盖模型和预览，请先备份。
+{
+  "nominal_diameter": 4,
+  "across_flats_assumed": 7,
+  "height_assumed": 3.2,
+  "pitch_assumed": 0.7,
+  "reference_url": "https://www.accu.co.uk/hexagon-nuts/268707-HPN-M4-BR"
+}
