@@ -1,6 +1,6 @@
 import bpy, math, bmesh, json, os
 from mathutils import Vector
-P={'diameter_nominal':3.5,'overall_length_nominal':8,'pitch_assumed':0.6,'head_diameter_assumed':7.0,'head_height_assumed':2.0,'socket_max_diameter_assumed':2.8,'socket_min_diameter_assumed':2.0,'socket_depth_assumed':1.15}
+P={'diameter_nominal':3.5,'overall_length_nominal':8,'pitch_assumed':0.6,'head_diameter_order_confirmed':5.3,'head_height_assumed':1.15,'socket_max_diameter_assumed':2.8,'socket_min_diameter_assumed':2.0,'socket_depth_assumed':1.15}
 OUT=os.path.dirname(os.path.abspath(__file__));NAME=os.path.basename(OUT);TOP=P['overall_length_nominal'];L=TOP-P['head_height_assumed']
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 sc=bpy.context.scene;sc.unit_settings.system='METRIC';sc.unit_settings.scale_length=.001;sc.unit_settings.length_unit='MILLIMETERS'
@@ -30,7 +30,7 @@ for j in range(steps+1):
   return r
  ring(z,rad)
 # Assumed 90-degree cone, short rim and edge bevel, not certified dimensions.
-for rr,z in [(3.5,L+1.75),(3.5,TOP-.1),(3.4,TOP)]:ring(z,lambda a,r=rr:r)
+for rr,z in [(2.65,L+.9),(2.65,TOP-.1),(2.55,TOP)]:ring(z,lambda a,r=rr:r)
 # Six lobes are a visual approximation, not standardized Torx tool geometry.
 for fac,z in [(1.05,TOP),(1,TOP-.1),(1,TOP-P['socket_depth_assumed'])]:
  ring(z,lambda a,f=fac:f*(1.2+.2*math.cos(6*a)))
@@ -42,7 +42,7 @@ bm=bmesh.new();bm.from_mesh(main.data);bmesh.ops.recalc_face_normals(bm,faces=li
 for p in main.data.polygons:p.use_smooth=abs(p.normal.z)<.94
 for k,v in P.items():main[k]=v
 main['source_photo']='../../参考照片/20261113_圆柱头与梅花沉头螺丝_实物图.jpg';main['material_grade']='12.9级来自标签及用户描述；未验证材质、硬度和认证'
-notes='12.9级梅花沉头螺丝 M3.5×8 · 可编辑照片概念模型\n证据来源：空格标签 M3.5×8 12.9；用户说明已用完、与右下角12mm同款仅长度8mm，梅花头倒角。没有8mm实物可直接核对。\n长度解释：沉头螺丝名义长度通常含头，本模型总长8mm；用户未提供测量，需确认长度口径。\n名义直径3.5mm来自标签。右旋螺距0.6mm是M3.5粗牙参考假设，不是实测。\n外观假设：头径7.0mm、头高2.0mm、90°锥面、顶缘小倒角，六瓣槽最大径2.8mm最小径2.0mm深1.15mm。\n六瓣槽使用连续余弦轮廓视觉近似，不是标准Torx轮廓，不指定T号或保证工具配合。头径、头高、螺距、槽号均待卡尺/牙规/批头核实。\n12.9级为标签与用户提供的等级描述，本模型不验证硬度或材料证书；黑色材质仅表达照片外观，不推断发黑/镀层工艺。\n螺纹牙形、截顶、端部倒角及头下过渡已简化，无公差。仅用于库存识别/布局，不作为制造、强度验证或采购配合依据。\n单位mm，原点尖端，+Z朝头部。模型与预览集合分离。build_model.py可重建。\n'+json.dumps(P,ensure_ascii=False,indent=2)
+notes='12.9级梅花沉头螺丝 M3.5×8 · 可编辑照片概念模型\n证据来源：空格标签 M3.5×8 12.9；用户说明已用完、与右下角12mm同款仅长度8mm，梅花头倒角。没有8mm实物可直接核对。\n长度解释：沉头螺丝名义长度通常含头，本模型总长8mm；用户未提供测量，需确认长度口径。\n名义直径3.5mm来自标签。右旋螺距0.6mm是M3.5粗牙参考假设，不是实测。\n尺寸依据与外观假设：头径5.3mm来自订单并经用户确认；头高1.15mm为随90°锥面重新协调的参考值、90°锥面、顶缘小倒角，六瓣槽最大径2.8mm最小径2.0mm深1.15mm。\n六瓣槽使用连续余弦轮廓视觉近似，不是标准Torx轮廓，不指定T号或保证工具配合。头径5.3mm已按用户指示修正（非卡尺实测）；头高、螺距、槽号仍待卡尺/牙规/批头核实。\n12.9级为标签与用户提供的等级描述，本模型不验证硬度或材料证书；黑色材质仅表达照片外观，不推断发黑/镀层工艺。\n螺纹牙形、截顶、端部倒角及头下过渡已简化，无公差。仅用于库存识别/布局，不作为制造、强度验证或采购配合依据。\n单位mm，原点尖端，+Z朝头部。模型与预览集合分离。build_model.py可重建。\n'+json.dumps(P,ensure_ascii=False,indent=2)
 open(os.path.join(OUT,'模型说明.txt'),'w').write(notes);bpy.data.texts.new('尺寸来源与假定_请先读').write(notes)
 checks={'name':NAME,'nonmanifold_edges':bad,'volume_mm3':volume,'dimensions_mm':[round(float(x),5) for x in main.dimensions],'shank_to_cone_start_mm':L,'overall_length_mm':TOP,'vertices':len(main.data.vertices)}
 open(os.path.join(OUT,'geometry_check.json'),'w').write(json.dumps(checks,indent=2,ensure_ascii=False))

@@ -24,6 +24,7 @@ bm=bmesh.new();bm.from_mesh(me);bmesh.ops.recalc_face_normals(bm,faces=list(bm.f
 for f in me.polygons:f.use_smooth=abs(f.normal.z)<.99
 notes='空心轴套 6×8×35：订单SKU Φ6*8*35；按内径6、外径8、长35 mm解释。不是供应商图纸或实测认证；下单前需核对这一尺寸顺序。倒角0.15mm为参考假设，材质订单标题304，不代表材质检测。无公差、硬度、配合等级依据。用于装配占位，不能决定过盈。'
 for k,v in P.items():main[k]=v
+notes += '\n用户2026-11-13确认：内径6、外径8、长35mm；顺序不再待确认，倒角公差未实测。\n'
 open(os.path.join(OUT,'模型说明.txt'),'w').write(notes);bpy.data.texts.new('尺寸依据与边界').write(notes)
 checks={'name':NAME,'nonmanifold_edges':bad,'volume_mm3':vol,'dimensions_mm':list(main.dimensions),'parameters':P}
 open(os.path.join(OUT,'geometry_check.json'),'w').write(json.dumps(checks,ensure_ascii=False,indent=2))

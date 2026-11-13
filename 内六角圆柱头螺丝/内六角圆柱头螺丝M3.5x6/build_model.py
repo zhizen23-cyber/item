@@ -46,6 +46,7 @@ for p in main.data.polygons:p.use_smooth=abs(p.normal.z)<.94
 for k,v in P.items():main[k]=v
 main['source_photo']='../../参考照片/20261113_圆柱头与梅花沉头螺丝_实物图.jpg';main['material_grade']='未确认，不推定304或强度等级'
 notes='内六角圆柱头螺丝M3.5x6 · 照片参考模型\n证据：照片隔间标签 m3.5*6，名义直径与长度来自标签，不是卡尺实测。长度暂按圆柱头螺钉头下长度解释。\n照片可见银色外观、圆柱头和螺纹；M3.5×6槽口可辨内六角，其他规格按同类头型参考，特别M6×25头部与槽口受遮挡，须核实。\n假设参考尺寸：右旋全螺纹，牙距0.6 mm；头径6 mm、头高3.5 mm、内六角对边2.5 mm、槽深1.6 mm。总包络长9.5 mm。这些是常见圆柱头形制的建模参考/工程假设，非实物测量或标准认证。\n材质、镀层与强度等级未知，不推定304或12.9级。12.9标签只出现在相邻黑色沉头螺丝，不应用到本件。\n模型没有头侧滚花：照片分辨率不足，光滑圆柱头作简化。螺纹截顶与倒角、尖端、退刀过渡简化，不含制造公差。\n单位mm，原点螺丝尖端，+Z朝头部。仅适合库存识别/布局；采购配合前核对牙距、长度、头径、头高、槽型和材料。\n修改P可重建模型；使用blender -b --python build_model.py。\n'+json.dumps(P,ensure_ascii=False,indent=2)
+notes += '\n用户2026-11-13确认允许杯头暂按全牙建模；这不是实物全牙测量认证。\n'
 open(os.path.join(OUT,'模型说明.txt'),'w').write(notes);bpy.data.texts.new('尺寸来源与假定_请先读').write(notes)
 checks={'name':NAME,'nonmanifold_edges':bad,'volume_mm3':volume,'dimensions_mm':[round(float(x),5) for x in main.dimensions],'under_head_length_mm':L,'overall_length_mm':TOP,'vertices':len(main.data.vertices)}
 open(os.path.join(OUT,'geometry_check.json'),'w').write(json.dumps(checks,indent=2,ensure_ascii=False))

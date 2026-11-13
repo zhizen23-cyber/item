@@ -56,6 +56,7 @@ M2×0.4右旋全螺纹、头径3.8 mm、头高2 mm、内六角对边1.5 mm、槽
 适合库存识别和布局，精密配合/采购/制造前需实测螺距、头下长度、头径、头高、六角槽与材料等级。
 修改P后运行blender -b --python build_model.py重建，注意保存原有修改。
 """+json.dumps(P,ensure_ascii=False,indent=2)
+notes += '\n用户2026-11-13确认允许杯头暂按全牙建模；这不是实物全牙测量认证。\n'
 open(os.path.join(OUT,'模型说明.txt'),'w').write(notes);bpy.data.texts.new('尺寸来源与假定_请先读').write(notes)
 checks={'name':NAME,'nonmanifold_edges':bad,'volume_mm3':volume,'dimensions_mm':[round(float(x),5) for x in main.dimensions],'under_head_length_mm':L,'overall_length_mm':TOP,'vertices':len(main.data.vertices)}
 open(os.path.join(OUT,'geometry_check.json'),'w').write(json.dumps(checks,indent=2,ensure_ascii=False))

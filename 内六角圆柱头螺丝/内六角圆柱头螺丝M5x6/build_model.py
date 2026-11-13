@@ -46,6 +46,7 @@ for p in main.data.polygons:p.use_smooth=abs(p.normal.z)<.94
 for k,v in P.items():main[k]=v
 main['source_photo']='../../参考照片/20261113_M5杯头与防松螺母_实物图.jpg';main['material_grade']='未确认，不推定304或强度等级'
 notes='内六角圆柱头螺丝 M5×6 · 黑色杯头照片参考模型\n证据：照片隔间标签“杯头 m5*6”，可见黑色圆柱头、短螺纹与凹槽；内六角采用可见槽口及同类杯头形制参考，照片隔盖模糊，仍需实物核对。\n名义直径5mm、头下长度6mm来自标签解释，不是卡尺实测。长度按不含头解释。\n工程参考/假设：右旋M5×0.8全螺纹、头径8.5mm、头高5mm、六角对边4mm、槽深2.5mm。包络总长11mm。以上头/槽/螺距数值未在实物测量，不构成标准认证。\n黑色仅表达照片外观，材质、表面处理与强度等级未知，不推定12.9级或304。\n头侧采用光滑圆柱面，照片不足以分辨细纹。牙型、截顶、尖端、退刀过渡与倒角简化，不含制造公差。\n仅供库存识别和装配包络。精密配合及采购前需核对螺距、长度口径、头径头高、驱动槽、材料和等级。\n单位mm；原点尖端，+Z朝头部；零件与预览集合分开。build_model.py的P可修改重建。\n'+json.dumps(P,ensure_ascii=False,indent=2)
+notes += '\n用户2026-11-13确认允许杯头暂按全牙建模；这不是实物全牙测量认证。\n'
 open(os.path.join(OUT,'模型说明.txt'),'w').write(notes);bpy.data.texts.new('尺寸来源与假定_请先读').write(notes)
 checks={'name':NAME,'nonmanifold_edges':bad,'volume_mm3':volume,'dimensions_mm':[round(float(x),5) for x in main.dimensions],'under_head_length_mm':L,'overall_length_mm':TOP,'vertices':len(main.data.vertices)}
 open(os.path.join(OUT,'geometry_check.json'),'w').write(json.dumps(checks,indent=2,ensure_ascii=False))

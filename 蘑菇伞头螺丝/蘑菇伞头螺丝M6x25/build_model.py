@@ -49,6 +49,7 @@ for p in main.data.polygons:p.use_smooth=abs(p.normal.z)<.9999
 for k,v in P.items():main[k]=v
 main['source_photo']='../../参考照片/20261113_圆柱头与梅花沉头螺丝_实物图.jpg';main['material_grade']='未确认，不推定304或强度等级'
 notes='蘑菇伞头螺丝 M6×25 · 用户纠正后的参考模型\n头型来自用户明确纠正“蘑菇伞头”，替代此前错误圆柱头模型。照片标签m6*25，名义直径6、头下长25mm按标签解释，未实测。\n宽圆弧低穹顶：头径10.5mm、头高3.3mm暂定；总长28.3mm。右旋M6螺纹牙距1mm仅参考假设。头形采用椭圆弧近似，不认定ISO/DIN型号。\n驱动槽原照片受遮挡，不能断定。为可编辑示意暂用内六角对边4mm、深1.8mm；不是已确认槽型。采购工具/装配前必须核实，可能需要改槽。\n材料、镀层、强度等级未知，不认定304或12.9级。照片相邻黑色件的12.9标签不属于本件。\n螺纹、头部轮廓、倒角及过渡简化，非制造/公差认证。单位mm，原点尖端，+Z朝头部。零件与灯光地面集合分开。\n修改P和轮廓可重建：blender -b --python build_model.py。\n'+json.dumps(P,ensure_ascii=False,indent=2)
+notes += '\n用户2026-11-13确认同时有M6×25杯头与蘑菇伞头，两个独立条目共存；此前作废的是将照片认错的版本，非否认用户有杯头。\n'
 open(os.path.join(OUT,'模型说明.txt'),'w').write(notes);bpy.data.texts.new('尺寸来源与假定_请先读').write(notes)
 checks={'name':NAME,'nonmanifold_edges':bad,'volume_mm3':volume,'dimensions_mm':[round(float(x),5) for x in main.dimensions],'under_head_length_mm':L,'overall_length_mm':TOP,'vertices':len(main.data.vertices)}
 open(os.path.join(OUT,'geometry_check.json'),'w').write(json.dumps(checks,indent=2,ensure_ascii=False))

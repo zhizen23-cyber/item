@@ -1,0 +1,14 @@
+内六角圆柱头螺丝M6x25 · 用户确认同时持有杯头与蘑菇伞头，两者独立保留。
+用户订单M6×25，头下长25mm；杯头参考DIN912/ISO4762型尺寸：头径10、头高6、六角对边5、槽深3mm；M6×1，全牙参考模型。来源 https://media.distrelec.com/Web/Downloads/_t/ds/1003763_eng_tds.pdf 。头槽与倒角、牙形为名义参考，不是实测及制造认证。
+用户2026-11-13允许杯头暂按全牙建模，不等于实物全牙经过测量。
+{
+  "diameter": 6,
+  "under_head_length": 25,
+  "pitch_assumed": 1.0,
+  "head_diameter_assumed": 10,
+  "head_height_assumed": 6,
+  "hex_af_assumed": 5,
+  "socket_depth_assumed": 3,
+  "knurl_depth_visual": 0
+}
+用户2026-11-13确认允许杯头暂按全牙建模；这不是实物全牙测量认证。

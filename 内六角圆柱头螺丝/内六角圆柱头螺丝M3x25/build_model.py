@@ -46,6 +46,7 @@ for p in main.data.polygons:p.use_smooth=abs(p.normal.z)<.94
 for k,v in P.items():main[k]=v
 main['source_photo']='../../参考照片/20261113_M3杯头螺丝_实物图.jpg';main['material_grade']='未确认，不推定304或强度等级'
 notes='内六角圆柱头螺丝 M3×25 · 照片参考模型\n证据：隔间标签 m3*25，杯头/内六角来自标签和可见头部。名义直径3mm和长度25mm来自标签，非实测。长度暂按头下长度解释。\nM3×10与M3×14照片能辨圆柱头六角凹槽及侧直纹；M3×16被标签和隔板遮挡较多、M3×25部分头部细节遮挡，同类槽型和侧直纹有推定成分。\n参考假设：右旋全螺纹，螺距0.5mm、头径5.5mm、头高3mm、内六角对边2.5mm、槽深1.3mm。48条深0.06mm侧直纹为视觉近似。所有头槽与牙型尺寸均非实测，未认证DIN/ISO标准。\n总包络长28mm。材质、镀层和强度等级未知，不推定304或12.9级。银色仅为外观。\n螺纹、倒角、退刀过渡与平端简化，无制造公差或量规验证，不能据此直接制造或认定匹配。\n单位mm，原点尖端，+Z朝头部；零件与预览集合分开。用于库存识别/布局，采购配合前请核对螺距、头下长、头径高、内六角与材料。\n修改P后以blender -b --python build_model.py重建。\n'+json.dumps(P,ensure_ascii=False,indent=2)
+notes += '\n用户2026-11-13确认允许杯头暂按全牙建模；这不是实物全牙测量认证。\n'
 open(os.path.join(OUT,'模型说明.txt'),'w').write(notes);bpy.data.texts.new('尺寸来源与假定_请先读').write(notes)
 checks={'name':NAME,'nonmanifold_edges':bad,'volume_mm3':volume,'dimensions_mm':[round(float(x),5) for x in main.dimensions],'under_head_length_mm':L,'overall_length_mm':TOP,'vertices':len(main.data.vertices)}
 open(os.path.join(OUT,'geometry_check.json'),'w').write(json.dumps(checks,indent=2,ensure_ascii=False))

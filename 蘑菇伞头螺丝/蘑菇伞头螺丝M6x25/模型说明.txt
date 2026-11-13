@@ -15,3 +15,4 @@
   "socket_depth_assumed": 1.8,
   "knurl_depth_visual": 0
 }
+用户2026-11-13确认同时持有M6×25杯头与蘑菇伞头，本条蘑菇伞头保持不变。

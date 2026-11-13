@@ -46,6 +46,7 @@ for p in main.data.polygons:p.use_smooth=abs(p.normal.z)<.94
 for k,v in P.items():main[k]=v
 main['source_url']='https://media.distrelec.com/Web/Downloads/_t/ds/1003763_eng_tds.pdf';main['material_grade']='订单称304，未实测认证'
 notes='内六角圆柱头螺丝M4x20 · 参数化名义装配模型\n来源：用户订单规格 M4×20，标题304；并非实物测量。\n名义参数：头下长度20mm，头径7mm，头高4mm，六角对边3mm，槽深采用表列最小值2mm。右旋粗牙M4×0.7，全牙版本。\n参考尺寸来源：Bossard BN3 DIN912/ISO4762全牙产品尺寸表，https://media.distrelec.com/Web/Downloads/_t/ds/1003763_eng_tds.pdf ，检索2026-11-13。仅借用标准形状尺寸，不声称用户零件为Bossard品牌、8.8级或镀锌。订单304仅作为采购文字记录，非材质认证。\n模型使用全牙版本。长规格也可能实际为半牙；当前无实物证据，需核对牙长。牙型/截顶/根部圆弧/退刀/倒角/槽口和表面纹理简化，无制造公差；槽口倒角属于展示假设。\n用途：库存识别、名义装配包络，非生产图纸或强度认证；不能用于直接加工螺纹。单位mm，原点尖端，+Z朝头。\n'+json.dumps(P,ensure_ascii=False,indent=2)
+notes += '\n用户2026-11-13确认允许杯头暂按全牙建模；这不是实物全牙测量认证。\n'
 open(os.path.join(OUT,'模型说明.txt'),'w').write(notes);bpy.data.texts.new('尺寸来源与假定_请先读').write(notes)
 checks={'name':NAME,'nonmanifold_edges':bad,'volume_mm3':volume,'dimensions_mm':[round(float(x),5) for x in main.dimensions],'under_head_length_mm':L,'overall_length_mm':TOP,'vertices':len(main.data.vertices)}
 open(os.path.join(OUT,'geometry_check.json'),'w').write(json.dumps(checks,indent=2,ensure_ascii=False))
