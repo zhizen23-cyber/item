@@ -1,0 +1,20 @@
+十字沉头螺丝 M3×6 · 照片参考模型
+照片两格明确标 3*6 和 3*4。当前文件只含 M3×6 一种规格，另一规格单独保存。
+由可见平头、锥形底面及十字凹槽判断为十字沉头螺丝。总长按沉头螺钉惯例含头解释；不是头下长度。标签本身未给标准号。
+螺纹按常用 M3×0.5 右旋建立连续螺旋近似牙形，不是独立圆环。未加入制造公差、滚丝牙根圆角或螺纹量规认证。
+头径 5.6、头高 1.65、90° 沉头参照供应商同类产品数据；十字槽宽/深、倒角为估计，不能凭照片确认标准、材质或等级。并未认定用户实物就是该供应商型号。
+参考： https://www.ettinger.de/en/product-datasheet/7f6af7fb5171cc50c9ad23da4012b5ab/create
+使用前请实测外径、含头总长、头径、头高、螺距与驱动槽；本文件用于库存识别和布局预览，不是可直接加工的认证图。
+单位 mm；零件与预览集合分开。两个规格共用父目录实物 JPG。
+修改 P 后运行 blender -b --python build_model.py 可重建，注意备份自定义修改。
+{
+  "diameter": 3.0,
+  "overall_length": 6,
+  "pitch_assumed": 0.5,
+  "head_diameter_assumed": 5.6,
+  "head_height_assumed": 1.65,
+  "countersink_angle_assumed": 90,
+  "socket_width_assumed": 0.72,
+  "socket_span_assumed": 2.9,
+  "socket_depth_assumed": 1.05
+}
