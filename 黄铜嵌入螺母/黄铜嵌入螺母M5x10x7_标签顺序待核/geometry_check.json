@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "M": 5,
+    "L_assumed": 10,
+    "D_assumed": 7,
+    "label": "5*10*7",
+    "dimension_order_confirmed": false
+  },
+  "dimensions_mm": [
+    7.0,
+    7.0,
+    10.0
+  ],
+  "nonmanifold_edges": 0,
+  "volume_mm3": 201.4098901335905,
+  "scope": "标签顺序假设，待核；非制造模型"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "304_GB833_M3x6",
+  "nonmanifold_edges": 0,
+  "volume_mm3": 213.92708407400434,
+  "dimensions_mm": [
+    11.0,
+    11.0,
+    8.0
+  ],
+  "under_head_length_mm": 6,
+  "overall_length_mm": 8,
+  "vertices": 35430
+}
