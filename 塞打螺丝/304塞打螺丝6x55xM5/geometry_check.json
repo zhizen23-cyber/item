@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "shoulder_d": 6,
+    "shoulder_l": 55,
+    "thread_d": 5,
+    "pitch": 0.8,
+    "thread_l": 10,
+    "head_d": 10,
+    "head_h": 4.35,
+    "socket_af": 3,
+    "socket_depth_assumed": 2,
+    "dark": false,
+    "label": "6*55*M5 佰瑞特304不锈钢光杆塞打螺栓"
+  },
+  "envelope_mm": [
+    10.0,
+    10.0,
+    69.3499984741211
+  ],
+  "nonmanifold_edges": 0,
+  "volume_mm3": 2042.3289556337668
+}

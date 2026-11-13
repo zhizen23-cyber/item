@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "shoulder_d": 4,
+    "shoulder_l": 10,
+    "thread_d": 3,
+    "pitch": 0.5,
+    "thread_l": 6,
+    "head_d": 6.9,
+    "head_h": 3.3,
+    "socket_af": 3,
+    "socket_depth_assumed": 2,
+    "dark": false,
+    "label": "4*10*M3 佰瑞特304不锈钢光杆塞打螺栓"
+  },
+  "envelope_mm": [
+    6.900000095367432,
+    6.900000095367432,
+    19.299999237060547
+  ],
+  "nonmanifold_edges": 0,
+  "volume_mm3": 267.7441978269125
+}
