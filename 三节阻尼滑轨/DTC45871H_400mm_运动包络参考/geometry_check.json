@@ -1,0 +1,68 @@
+{
+  "parts": [
+    {
+      "object": "外轨_45mm高度暂估_无定位孔",
+      "nonmanifold": 0,
+      "volume_mm3": 27631.99506092072
+    },
+    {
+      "object": "中轨_截面暂估",
+      "nonmanifold": 0,
+      "volume_mm3": 17550.0
+    },
+    {
+      "object": "内轨_截面暂估",
+      "nonmanifold": 0,
+      "volume_mm3": 13719.995498657227
+    },
+    {
+      "object": "阻尼壳体_外观示意",
+      "nonmanifold": 0,
+      "volume_mm3": 2250.0
+    },
+    {
+      "object": "阻尼缸_不代表内部行程",
+      "nonmanifold": 0,
+      "volume_mm3": 450.0000536441803
+    },
+    {
+      "object": "阻尼杆_静态示意",
+      "nonmanifold": 0,
+      "volume_mm3": 38.00000905990597
+    },
+    {
+      "object": "拆卸拨片_不代表卡扣机构",
+      "nonmanifold": 0,
+      "volume_mm3": 450.0
+    }
+  ],
+  "states": [
+    {
+      "frame": 1,
+      "envelope_mm": [
+        400.0,
+        12.699999809265137,
+        45.0
+      ]
+    },
+    {
+      "frame": 100,
+      "envelope_mm": [
+        800.0,
+        12.699999809265137,
+        45.0
+      ]
+    },
+    {
+      "frame": 210,
+      "envelope_mm": [
+        400.0,
+        12.699999809265137,
+        45.0
+      ]
+    }
+  ],
+  "height_is_assumed": true,
+  "holes": "intentionally omitted; unknown",
+  "physics_validated": false
+}

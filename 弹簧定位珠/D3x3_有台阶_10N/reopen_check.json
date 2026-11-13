@@ -1,0 +1,27 @@
+[
+  {
+    "name": "壳体_内部尺寸示意",
+    "nonmanifold": 0,
+    "volume_mm3": 4.560740835064759
+  },
+  {
+    "name": "法兰与收口_示意",
+    "nonmanifold": 0,
+    "volume_mm3": 4.359956905300746
+  },
+  {
+    "name": "底封_示意",
+    "nonmanifold": 0,
+    "volume_mm3": 0.8974061612116533
+  },
+  {
+    "name": "定位钢珠_D2p38_独立",
+    "nonmanifold": 0,
+    "volume_mm3": 7.030471285288824
+  },
+  {
+    "name": "内部弹簧_外观示意非10N仿真",
+    "nonmanifold": 0,
+    "volume_mm3": 0.36045283998834693
+  }
+]

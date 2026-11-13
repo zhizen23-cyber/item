@@ -1,0 +1,95 @@
+{
+  "dimensions_mm": [
+    147.0,
+    16.0,
+    8.0
+  ],
+  "parts": [
+    {
+      "name": "端头壳体_外径16假设",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 317.30849671578636
+    },
+    {
+      "name": "衬圈_示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 121.89020080225647
+    },
+    {
+      "name": "可动内球圈_孔5厚8",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 770.1228306683495
+    },
+    {
+      "name": "端头颈部_参考",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 954.9903701682445
+    },
+    {
+      "name": "端头六角_参考",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 219.90115873292916
+    },
+    {
+      "name": "端头壳体_外径16假设.001",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 317.30849671578636
+    },
+    {
+      "name": "衬圈_示意.001",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 121.89020080225647
+    },
+    {
+      "name": "可动内球圈_孔5厚8.001",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 770.1228306683495
+    },
+    {
+      "name": "端头颈部_参考.001",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 954.9903701682445
+    },
+    {
+      "name": "端头六角_参考.001",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 219.90115873292916
+    },
+    {
+      "name": "中央连杆_光杆区",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 745.5956539222477
+    },
+    {
+      "name": "M5螺纹芯_假设牙距0p8",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 250.6692434009808
+    },
+    {
+      "name": "M5可见牙_简化",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 72.3839691117674
+    },
+    {
+      "name": "M5螺纹芯_假设牙距0p8.001",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 250.6692434009808
+    },
+    {
+      "name": "M5可见牙_简化.001",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 72.3841499092669
+    }
+  ],
+  "parameters": {
+    "overall_length_assumed": 147,
+    "eye_bore": 5,
+    "eye_width": 8,
+    "end_length": 37,
+    "eye_outer_diameter_assumed": 16,
+    "center_distance_derived": 131,
+    "thread_nominal": "M5",
+    "pitch_assumed": 0.8
+  },
+  "scope": "外观与名义包络参考，不是制造图或力学认证"
+}

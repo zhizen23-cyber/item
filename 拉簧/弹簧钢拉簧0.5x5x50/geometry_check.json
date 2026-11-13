@@ -1,0 +1,23 @@
+{
+  "dimensions_mm": [
+    50.0,
+    5.0,
+    4.999997138977051
+  ],
+  "parts": [
+    {
+      "name": "拉簧_连续钢丝_含钩50参考",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 217.63274671516325
+    }
+  ],
+  "parameters": {
+    "wire": 0.5,
+    "outer_diameter": 5,
+    "total_length_including_hooks": 50,
+    "body_axial_length_assumed": 40,
+    "turn_count_assumed": 80,
+    "hook_centerline_radius_assumed": 2.25
+  },
+  "scope": "外观与名义包络参考，不是制造图或力学认证"
+}
