@@ -1,0 +1,20 @@
+内六角圆柱头螺丝 M2×10 · 照片参考模型
+照片标签为 m2*10 与 m2*7，分别建模。当前为 M2×10。
+长度按圆柱头螺钉头下长度解释；头高参考2 mm，因此总包络为 12 mm。
+M2×0.4右旋全螺纹、头径3.8 mm、头高2 mm、内六角对边1.5 mm、槽深1 mm为同类标准件参考值，不是用户实物的测量值。
+参考供应商规格：https://www.accu.co.uk/metric-cap-head-screws/3789-SSCF-M2-3-A2
+该参考页面是M2×3，仅用于M2头型/螺距，用户长度来自标签7/10。未认定用户实物的DIN/ISO标准、材质或强度等级。
+照片可见头侧滚花；本模型48条浅直纹为视觉近似，纹数和深度未实测。倒角、牙形截顶、退刀过渡为简化；没有加工公差或量规认证。
+原点在螺丝尖端中心，+Z朝头部，单位mm。零件与预览集合分开。
+适合库存识别和布局，精密配合/采购/制造前需实测螺距、头下长度、头径、头高、六角槽与材料等级。
+修改P后运行blender -b --python build_model.py重建，注意保存原有修改。
+{
+  "diameter": 2.0,
+  "under_head_length": 10,
+  "pitch_assumed": 0.4,
+  "head_diameter_assumed": 3.8,
+  "head_height_assumed": 2.0,
+  "hex_af_assumed": 1.5,
+  "socket_depth_assumed": 1.0,
+  "knurl_depth_visual": 0.045
+}

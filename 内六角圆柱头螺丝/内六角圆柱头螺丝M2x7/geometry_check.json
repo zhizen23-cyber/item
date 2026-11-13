@@ -1,0 +1,13 @@
+{
+  "name": "内六角圆柱头螺丝M2x7",
+  "nonmanifold_edges": 0,
+  "volume_mm3": 37.663596231369404,
+  "dimensions_mm": [
+    3.8,
+    3.8,
+    9.0
+  ],
+  "under_head_length_mm": 7,
+  "overall_length_mm": 9,
+  "vertices": 51282
+}
