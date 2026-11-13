@@ -1,0 +1,41 @@
+{
+  "source_sha256": "46ea8edfd197ad41bd1108497f54c9b9a660c7052082ffefd6391cadddc4407a",
+  "source_valid": null,
+  "source_bbox_mm": [
+    20,
+    16,
+    100
+  ],
+  "parts": [
+    {
+      "name": "OuterRail_L",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 4983.725355769191,
+      "bbox_mm": [
+        20.0,
+        7.0,
+        100.0
+      ]
+    },
+    {
+      "name": "CenterRail",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 8699.793636589973,
+      "bbox_mm": [
+        11.799999237060547,
+        11.59999942779541,
+        100.0
+      ]
+    },
+    {
+      "name": "OuterRail_R",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 4983.725355769202,
+      "bbox_mm": [
+        20.0,
+        7.0,
+        100.0
+      ]
+    }
+  ]
+}
