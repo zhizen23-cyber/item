@@ -1,0 +1,15 @@
+{
+  "name": "12.9级梅花沉头螺丝M3.5x12",
+  "nonmanifold_edges": 0,
+  "volume_mm3": 123.42522848464067,
+  "dimensions_mm": [
+    7.0,
+    7.0,
+    12.0
+  ],
+  "shank_to_cone_start_mm": 10.0,
+  "overall_length_mm": 12,
+  "vertices": 58752,
+  "reopened_verified": true,
+  "blender_version": "4.3.2"
+}

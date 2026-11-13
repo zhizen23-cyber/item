@@ -1,0 +1,10 @@
+{
+  "nonmanifold_edges": 0,
+  "volume_mm3": 136.1163510345026,
+  "dimensions_mm": [
+    6.0,
+    6.0,
+    9.5
+  ],
+  "reopened_in_blender": "4.3.2"
+}
