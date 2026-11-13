@@ -1,0 +1,22 @@
+[
+  {
+    "object": "可摆动球面内圈_孔5宽8",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 484.020216,
+    "dimensions_mm": [
+      11.109999656677246,
+      11.109999656677246,
+      8.0
+    ]
+  },
+  {
+    "object": "杆端壳体",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 1466.288106,
+    "dimensions_mm": [
+      18.0,
+      42.0,
+      6.0
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "name": "634ZZ轴承",
+  "dimensions_mm": [
+    16.0,
+    16.0,
+    5.0
+  ],
+  "parts": [
+    {
+      "object": "内圈_装配简化",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 133.07672853016956
+    },
+    {
+      "object": "外圈_装配简化",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 321.04862456239357
+    },
+    {
+      "object": "金属防尘盖_示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 18.358721230658077
+    },
+    {
+      "object": "金属防尘盖_示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 18.35874850439426
+    }
+  ],
+  "source": "https://www.nsk.com/sg-en/engineering/634zz1mc3-apn.html",
+  "model_scope": "ZZ双面金属防尘盖外观装配模型；公称包络据NSK系列尺寸参考，不认定实购物品品牌、游隙或内部规格。 尺寸来源为NSK 634ZZ1MC3系列页面，仅借用d/D/B，不沿用其MC3子后缀。"
+}

@@ -1,0 +1,16 @@
+{
+  "reopened": true,
+  "blender_version": "4.3.2",
+  "dimensions_mm": [
+    10.0,
+    10.0,
+    4.0
+  ],
+  "parts": [
+    {
+      "name": "轴承4x10x4_包络_盖型未知",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 263.56524526933254
+    }
+  ]
+}

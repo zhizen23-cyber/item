@@ -1,0 +1,16 @@
+{
+  "opened": true,
+  "blender_version": "4.3.2",
+  "objects": [
+    {
+      "object": "可转动球面内圈_孔8宽11",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 1309.2458792476937
+    },
+    {
+      "object": "外圈_外径19宽6",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 543.6712239449091
+    }
+  ]
+}

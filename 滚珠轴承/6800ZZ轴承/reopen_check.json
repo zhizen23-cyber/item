@@ -1,0 +1,31 @@
+{
+  "reopened": true,
+  "blender_version": "4.3.2",
+  "dimensions_mm": [
+    19.0,
+    19.0,
+    5.0
+  ],
+  "parts": [
+    {
+      "name": "内圈_装配简化",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 198.93380656480807
+    },
+    {
+      "name": "外圈_装配简化",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 293.8196614330038
+    },
+    {
+      "name": "金属防尘盖_示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 19.593612747648596
+    },
+    {
+      "name": "金属防尘盖_示意.001",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 19.593641824903887
+    }
+  ]
+}

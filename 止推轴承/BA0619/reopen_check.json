@@ -1,0 +1,71 @@
+{
+  "opened": true,
+  "blender_version": "4.3.2",
+  "objects": [
+    {
+      "object": "下垫圈_1mm",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 255.1519075706085
+    },
+    {
+      "object": "上垫圈_1mm",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 255.1519075706085
+    },
+    {
+      "object": "保持架_示意10滚针",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 192.57269143462227
+    },
+    {
+      "object": "滚针_00_数量示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 17.266425935550267
+    },
+    {
+      "object": "滚针_01_数量示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 17.266425935550267
+    },
+    {
+      "object": "滚针_02_数量示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 17.266425935550267
+    },
+    {
+      "object": "滚针_03_数量示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 17.266425935550267
+    },
+    {
+      "object": "滚针_04_数量示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 17.266425935550267
+    },
+    {
+      "object": "滚针_05_数量示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 17.266425935550267
+    },
+    {
+      "object": "滚针_06_数量示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 17.266425935550267
+    },
+    {
+      "object": "滚针_07_数量示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 17.266425935550267
+    },
+    {
+      "object": "滚针_08_数量示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 17.266425935550267
+    },
+    {
+      "object": "滚针_09_数量示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 17.266425935550267
+    }
+  ]
+}

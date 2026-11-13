@@ -1,0 +1,132 @@
+[
+  {
+    "object": "下垫圈_1mm",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 255.151908,
+    "dimensions_mm": [
+      19.0,
+      19.0,
+      1.0
+    ]
+  },
+  {
+    "object": "上垫圈_1mm",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 255.151908,
+    "dimensions_mm": [
+      19.0,
+      19.0,
+      1.0
+    ]
+  },
+  {
+    "object": "保持架_示意10滚针",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 192.572691,
+    "dimensions_mm": [
+      19.0,
+      19.0,
+      1.4000000953674316
+    ]
+  },
+  {
+    "object": "滚针_00_数量示意",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 17.266426,
+    "dimensions_mm": [
+      2.0,
+      2.0,
+      5.5
+    ]
+  },
+  {
+    "object": "滚针_01_数量示意",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 17.266426,
+    "dimensions_mm": [
+      2.0,
+      2.0,
+      5.5
+    ]
+  },
+  {
+    "object": "滚针_02_数量示意",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 17.266426,
+    "dimensions_mm": [
+      1.9999998807907104,
+      2.0,
+      5.499999523162842
+    ]
+  },
+  {
+    "object": "滚针_03_数量示意",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 17.266426,
+    "dimensions_mm": [
+      1.9999998807907104,
+      2.0,
+      5.499999523162842
+    ]
+  },
+  {
+    "object": "滚针_04_数量示意",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 17.266426,
+    "dimensions_mm": [
+      2.0,
+      2.0,
+      5.5
+    ]
+  },
+  {
+    "object": "滚针_05_数量示意",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 17.266426,
+    "dimensions_mm": [
+      2.0,
+      2.0,
+      5.5
+    ]
+  },
+  {
+    "object": "滚针_06_数量示意",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 17.266426,
+    "dimensions_mm": [
+      2.0,
+      2.0,
+      5.5
+    ]
+  },
+  {
+    "object": "滚针_07_数量示意",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 17.266426,
+    "dimensions_mm": [
+      1.9999998807907104,
+      2.0,
+      5.499999523162842
+    ]
+  },
+  {
+    "object": "滚针_08_数量示意",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 17.266426,
+    "dimensions_mm": [
+      1.9999998807907104,
+      2.0,
+      5.499999523162842
+    ]
+  },
+  {
+    "object": "滚针_09_数量示意",
+    "nonmanifold_edges": 0,
+    "volume_mm3": 17.266426,
+    "dimensions_mm": [
+      2.0,
+      2.0,
+      5.5
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "name": "636ZZ轴承",
+  "dimensions_mm": [
+    22.0,
+    22.0,
+    7.0
+  ],
+  "parts": [
+    {
+      "object": "内圈_装配简化",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 364.95776306132905
+    },
+    {
+      "object": "外圈_装配简化",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 836.3336692568778
+    },
+    {
+      "object": "金属防尘盖_示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 34.58309918986032
+    },
+    {
+      "object": "金属防尘盖_示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 34.58315060671426
+    }
+  ],
+  "source": "https://www.nsk.com/engineering/636zz-esm-md.html",
+  "model_scope": "ZZ双面金属防尘盖外观装配模型；公称包络据NSK系列尺寸参考，不认定实购物品品牌、游隙或内部规格。"
+}

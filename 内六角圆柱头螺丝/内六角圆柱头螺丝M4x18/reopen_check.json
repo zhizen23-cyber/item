@@ -1,0 +1,12 @@
+{
+  "name": "内六角圆柱头螺丝M4x18",
+  "blender_version": "4.3.2",
+  "nonmanifold_edges": 0,
+  "volume_mm3": 322.2118089710774,
+  "dimensions_mm": [
+    7.0,
+    7.0,
+    22.0
+  ],
+  "reopen_passed": true
+}

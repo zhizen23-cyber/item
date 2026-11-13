@@ -1,0 +1,13 @@
+{
+  "name": "内六角圆柱头螺丝M4x25",
+  "nonmanifold_edges": 0,
+  "volume_mm3": 394.96604611442723,
+  "dimensions_mm": [
+    7.0,
+    7.0,
+    29.0
+  ],
+  "under_head_length_mm": 25,
+  "overall_length_mm": 29,
+  "vertices": 103842
+}

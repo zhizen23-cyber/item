@@ -1,0 +1,16 @@
+{
+  "name": "空心轴套内6外8长35",
+  "nonmanifold_edges": 0,
+  "volume_mm3": 768.3919000237587,
+  "dimensions_mm": [
+    8.0,
+    8.0,
+    35.0
+  ],
+  "parameters": {
+    "inner_diameter": 6,
+    "outer_diameter": 8,
+    "length": 35,
+    "chamfer_reference": 0.15
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "内六角圆柱头螺丝M4x20",
+  "nonmanifold_edges": 0,
+  "volume_mm3": 342.99871347270346,
+  "dimensions_mm": [
+    7.0,
+    7.0,
+    24.0
+  ],
+  "under_head_length_mm": 20,
+  "overall_length_mm": 24,
+  "vertices": 83250
+}

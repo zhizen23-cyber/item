@@ -1,0 +1,12 @@
+{
+  "name": "内六角圆柱头螺丝M5x16",
+  "blender_version": "4.3.2",
+  "nonmanifold_edges": 0,
+  "volume_mm3": 507.11341348653303,
+  "dimensions_mm": [
+    8.5,
+    8.5,
+    21.0
+  ],
+  "reopen_passed": true
+}

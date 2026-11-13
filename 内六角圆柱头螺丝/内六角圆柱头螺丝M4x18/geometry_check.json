@@ -1,0 +1,13 @@
+{
+  "name": "内六角圆柱头螺丝M4x18",
+  "nonmanifold_edges": 0,
+  "volume_mm3": 322.2118089710774,
+  "dimensions_mm": [
+    7.0,
+    7.0,
+    22.0
+  ],
+  "under_head_length_mm": 18,
+  "overall_length_mm": 22,
+  "vertices": 75042
+}

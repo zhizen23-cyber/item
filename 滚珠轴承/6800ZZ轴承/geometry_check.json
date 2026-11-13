@@ -1,0 +1,32 @@
+{
+  "name": "6800ZZ轴承",
+  "dimensions_mm": [
+    19.0,
+    19.0,
+    5.0
+  ],
+  "parts": [
+    {
+      "object": "内圈_装配简化",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 198.93380656480807
+    },
+    {
+      "object": "外圈_装配简化",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 293.8196614330038
+    },
+    {
+      "object": "金属防尘盖_示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 19.593612747648596
+    },
+    {
+      "object": "金属防尘盖_示意",
+      "nonmanifold_edges": 0,
+      "volume_mm3": 19.593641824903887
+    }
+  ],
+  "source": "https://www.nsk.com/engineering/6800zz-apn.html",
+  "model_scope": "ZZ双面金属防尘盖外观装配模型；公称包络据NSK系列尺寸参考，不认定实购物品品牌、游隙或内部规格。"
+}
