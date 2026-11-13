@@ -1,6 +1,6 @@
 import bpy, math, bmesh, json, os
 from mathutils import Vector
-P={'diameter': 6, 'under_head_length': 25, 'pitch_assumed': 1, 'head_diameter_assumed': 10, 'head_height_assumed': 6, 'hex_af_assumed': 5, 'socket_depth_assumed': 3, 'knurl_depth_visual': 0}
+P={'diameter': 6, 'under_head_length': 25, 'pitch_assumed': 1, 'head_diameter_assumed': 10.5, 'head_height_assumed': 3.3, 'hex_af_assumed': 4, 'socket_depth_assumed': 1.8, 'knurl_depth_visual': 0}
 OUT=os.path.dirname(os.path.abspath(__file__));NAME=os.path.basename(OUT);L=P['under_head_length'];D=P['diameter'];R=D/2;H=P['head_height_assumed'];HR=P['head_diameter_assumed']/2;TOP=L+H
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 sc=bpy.context.scene;sc.unit_settings.system='METRIC';sc.unit_settings.scale_length=.001;sc.unit_settings.length_unit='MILLIMETERS'
@@ -24,7 +24,10 @@ for j in range(steps+1):
   if z>end-pitch*.5:r+=(R-r)*(z-(end-pitch*.5))/(pitch*.5)
   ring.append(len(vs));vs.append((r*math.cos(a),r*math.sin(a),z))
  rows.append(ring)
-for r,z in [(R+.03*D,L),(HR-.1*D,L),(HR,L+.08*D),(HR,TOP-.1*D),(HR-.1*D,TOP)]:
+profile=[(R+.03*D,L),(HR-.15,L),(HR,L+.15)]
+# Broad domed mushroom cap, shallow edge, not a cylindrical cap.
+profile += [(2.65+(HR-2.65)*math.cos(t),L+.15+(H-.15)*math.sin(t)) for t in [i*math.pi/2/48 for i in range(1,49)]]
+for r,z in profile:
  rows.append(list(range(len(vs),len(vs)+n)))
  for i in range(n):
   a=2*math.pi*i/n
@@ -42,10 +45,10 @@ f=[tuple(reversed(range(nn))),tuple(range(18,24))]+[(j*nn+i,j*nn+(i+1)%nn,(j+1)*
 m=bpy.data.meshes.new('槽刀');m.from_pydata(v,[],f);m.update();cut=bpy.data.objects.new('槽刀',m);assets.objects.link(cut)
 bpy.context.view_layer.objects.active=main;mod=main.modifiers.new('内六角凹槽','BOOLEAN');mod.operation='DIFFERENCE';mod.solver='EXACT';mod.object=cut;bpy.ops.object.modifier_apply(modifier=mod.name);bpy.data.objects.remove(cut,do_unlink=True)
 bm=bmesh.new();bm.from_mesh(main.data);bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bad=sum(not e.is_manifold for e in bm.edges);volume=bm.calc_volume(signed=True);bm.to_mesh(main.data);bm.free();assert bad==0 and volume>0,(bad,volume)
-for p in main.data.polygons:p.use_smooth=abs(p.normal.z)<.94
+for p in main.data.polygons:p.use_smooth=abs(p.normal.z)<.9999
 for k,v in P.items():main[k]=v
 main['source_photo']='../../参考照片/20261113_圆柱头与梅花沉头螺丝_实物图.jpg';main['material_grade']='未确认，不推定304或强度等级'
-notes='内六角圆柱头螺丝M6x25 · 照片参考模型\n证据：照片隔间标签 m6*25，名义直径与长度来自标签，不是卡尺实测。长度暂按圆柱头螺钉头下长度解释。\n照片可见银色外观、圆柱头和螺纹；M3.5×6槽口可辨内六角，其他规格按同类头型参考，特别M6×25头部与槽口受遮挡，须核实。\n假设参考尺寸：右旋全螺纹，牙距1 mm；头径10 mm、头高6 mm、内六角对边5 mm、槽深3 mm。总包络长31 mm。这些是常见圆柱头形制的建模参考/工程假设，非实物测量或标准认证。\n材质、镀层与强度等级未知，不推定304或12.9级。12.9标签只出现在相邻黑色沉头螺丝，不应用到本件。\n模型没有头侧滚花：照片分辨率不足，光滑圆柱头作简化。螺纹截顶与倒角、尖端、退刀过渡简化，不含制造公差。\n单位mm，原点螺丝尖端，+Z朝头部。仅适合库存识别/布局；采购配合前核对牙距、长度、头径、头高、槽型和材料。\n修改P可重建模型；使用blender -b --python build_model.py。\n'+json.dumps(P,ensure_ascii=False,indent=2)
+notes='蘑菇伞头螺丝 M6×25 · 用户纠正后的参考模型\n头型来自用户明确纠正“蘑菇伞头”，替代此前错误圆柱头模型。照片标签m6*25，名义直径6、头下长25mm按标签解释，未实测。\n宽圆弧低穹顶：头径10.5mm、头高3.3mm暂定；总长28.3mm。右旋M6螺纹牙距1mm仅参考假设。头形采用椭圆弧近似，不认定ISO/DIN型号。\n驱动槽原照片受遮挡，不能断定。为可编辑示意暂用内六角对边4mm、深1.8mm；不是已确认槽型。采购工具/装配前必须核实，可能需要改槽。\n材料、镀层、强度等级未知，不认定304或12.9级。照片相邻黑色件的12.9标签不属于本件。\n螺纹、头部轮廓、倒角及过渡简化，非制造/公差认证。单位mm，原点尖端，+Z朝头部。零件与灯光地面集合分开。\n修改P和轮廓可重建：blender -b --python build_model.py。\n'+json.dumps(P,ensure_ascii=False,indent=2)
 open(os.path.join(OUT,'模型说明.txt'),'w').write(notes);bpy.data.texts.new('尺寸来源与假定_请先读').write(notes)
 checks={'name':NAME,'nonmanifold_edges':bad,'volume_mm3':volume,'dimensions_mm':[round(float(x),5) for x in main.dimensions],'under_head_length_mm':L,'overall_length_mm':TOP,'vertices':len(main.data.vertices)}
 open(os.path.join(OUT,'geometry_check.json'),'w').write(json.dumps(checks,indent=2,ensure_ascii=False))
