@@ -52,10 +52,10 @@ fs=[tuple(reversed(range(N))),tuple(range(3*N,4*N))]
 for j in range(3):
  for i in range(N):fs.append((j*N+i,j*N+(i+1)%N,(j+1)*N+(i+1)%N,(j+1)*N+i))
 me=bpy.data.meshes.new('Core_with_blind_hex');me.from_pydata(vs,[],fs);me.update();o=bpy.data.objects.new('固定芯轴_D4_内六角AF2深1p5_均待实测',me);assets.objects.link(o);o.data.materials.append(steel)
-bpy.ops.mesh.primitive_cylinder_add(vertices=6,radius=5/math.sqrt(3),depth=2,location=(0,0,5));o=bpy.context.object;o.name='台阶_C2_外六角AF5_对边待实测';link(o,assets);o.data.materials.append(steel)
+cyl('台阶_C2_圆肩D5p3_图估待实测',2.65,4,6,steel)
 cyl('M4螺纹芯_L8_牙型仅示意',1.65,6,14,steel)
 helix('M4x0p7_螺距与牙型仅示意',1.825,6.175,13.825,7.65/.7,.35,steel)
-notes='用户2026-11-18商品图：NST-JS6849-4C2L8M4，D9、W4、C2、M4牙长L8，合计14mm；1单位=1mm。原点轴承前端面，+Z指向螺纹。轴承外圈独立对象。照片/剖面显示台阶外六角及前端内六角，但未标对边和槽深：模型台阶AF5（对角5.774）、驱动槽AF2深1.5、芯轴D4、内部环界面、倒角、金属盖外观全部为示意假设。M4螺距暂按常用0.7，牙型简化。胶盖或铁盖需以实购物为准；没有仿真滚珠/滚道/内部承载。不可将未标尺寸当实测，不可据本模型确认载荷、夹紧、防脱或采购盖型。'
+notes='用户2026-11-18商品图：NST-JS6849-4C2L8M4，D9、W4、C2、M4牙长L8，合计14mm；1单位=1mm。原点轴承前端面，+Z指向螺纹。轴承外圈独立对象。修订R2：原图仅明确C2轴向台阶，没有证据支持原模型的外六角AF5；已撤掉该外六角。现按圆肩建模，D5.3由剖面相对D9的像素比例粗估，非标注尺寸，圆肩形状及外径仍需实物/厂家图确认。前端驱动槽按内六角AF2深1.5示意，芯轴D4、内部环界面、倒角、金属盖外观也均为未确认假设。M4螺距暂按常用0.7，牙型简化。胶盖或铁盖需以实购物为准；没有仿真滚珠/滚道/内部承载。不可将未标尺寸当实测，不可据本模型确认载荷、夹紧、防脱或采购盖型。'
 
 bpy.context.view_layer.update()
 report={'source':'用户2026-11-18提供的尺寸商品图','scope':notes,'objects':[]}
